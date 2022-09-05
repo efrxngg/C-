@@ -9,7 +9,7 @@ namespace Introduccion.util
 {
     public static class Printer
     {
-        public static void DibujarLinea(int tam = 10)
+        public static void DrawLine(int tam = 10)
         {
             WriteLine("".PadLeft(tam, '='));
         }
@@ -17,7 +17,7 @@ namespace Introduccion.util
         public static void WriteTitle(string titulo)
         {
             WriteLine("Titulo: " + titulo);
-            DibujarLinea(titulo.Length + 4);
+            DrawLine(titulo.Length + 4);
 
         }
 
