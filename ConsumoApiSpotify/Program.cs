@@ -1,4 +1,5 @@
 ﻿using ConsumoApiSpotify.App;
+using ConsumoApiSpotify.Menus;
 using ConsumoApiSpotify.Utils;
 using static System.Console;
 
@@ -7,13 +8,8 @@ class Program
 {
     static void  Main(string[] args)
     {
-        var api = new SpotifyServicesImpl();
-        api.GetAllArtistByName("eminem");
-
-        var test = new Printer();
-        test.DrawHeadAndBody("TEST", new List<Object> {"Efren", "Galarza"});
-        
-
+        MenuBusqueda menuBusquda = new MenuBusqueda();
+        menuBusquda.Run();
     }
 
 }
